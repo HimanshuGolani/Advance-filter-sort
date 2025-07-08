@@ -12,6 +12,9 @@ public class RecordInsertRequest {
     @NotNull
     private Map<String, Object> data = new HashMap<>();
 
+    public <K, V> RecordInsertRequest(Map<K, V> name) {
+    }
+
     @JsonAnyGetter
     public Map<String, Object> getData() {
         return data;
